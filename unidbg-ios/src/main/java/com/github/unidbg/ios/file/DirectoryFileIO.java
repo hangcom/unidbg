@@ -155,14 +155,4 @@ public class DirectoryFileIO extends BaseDarwinFileIO {
     public int chmod(int mode) {
         return chmod(dir, mode);
     }
-
-    @Override
-    public int chown(int uid, int gid) {
-        return chown(dir, uid, gid);
-    }
-
-    @Override
-    public int chflags(int flags) {
-        return chflags(dir, flags);
-    }
 }
